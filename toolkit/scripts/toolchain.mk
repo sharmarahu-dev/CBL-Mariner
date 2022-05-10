@@ -207,14 +207,14 @@ $(toolchain_local_temp): ;
 $(toolchain_local_temp)%: ;
 
 # If $(depend_TOOLCHAIN_ARCHIVE) and $(depend_REBUILD_TOOLCHAIN) argument trackers change it is important to check
-#	that all of the toolchain .rpms are correct. The different toolchain sources may have identail files but with
+#	that all of the toolchain .rpms are correct. The different toolchain sources may have identical files but with
 #	different contents, so always redo the bulk rpm extraction. The $(toolchain_rpms): target will take 
 #	responsibility for updating the .rpms in the final destination if needed.
 $(STATUS_FLAGS_DIR)/toolchain_local_temp.flag: $(selected_toolchain_archive) $(toolchain_local_temp) $(shell find $(toolchain_local_temp)/* 2>/dev/null) $(STATUS_FLAGS_DIR)/toolchain_verify.flag  $(depend_TOOLCHAIN_ARCHIVE) $(depend_REBUILD_TOOLCHAIN)
 	mkdir -p $(toolchain_local_temp) && \
 	rm -f $(toolchain_local_temp)/* && \
 	tar -I $(ARCHIVE_TOOL) -xf $(selected_toolchain_archive) -C $(toolchain_local_temp) --strip-components 1 && \
-	touch $(BUILD_DIR)/toolchain_temp/* && \
+	touch $(toolchain_local_temp)/* && \
 	touch $@
 
 # Replace the toolchain RPM if one of the following is true:
