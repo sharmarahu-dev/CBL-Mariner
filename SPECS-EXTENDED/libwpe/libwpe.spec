@@ -1,8 +1,8 @@
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
 Name:           libwpe
-Version:        1.6.0
-Release:        2%{?dist}
+Version:        1.12.0
+Release:        1%{?dist}
 Summary:        General-purpose library for the WPE-flavored port of WebKit
 License:        BSD
 URL:            https://github.com/WebPlatformForEmbedded/%{name}
@@ -55,6 +55,9 @@ popd
 %{_libdir}/pkgconfig/wpe-1.0.pc
 
 %changelog
+* Sat May 14 2022 Sriram Nambakam <snambakam@microsoft.com> - 1.12.0-1
+- Update to 1.12.0
+
 * Fri Oct 15 2021 Pawel Winogrodzki <pawelwi@microsoft.com> - 1.6.0-2
 - Initial CBL-Mariner import from Fedora 32 (license: MIT).
 
