@@ -7,7 +7,7 @@ Summary:        A WPE backend designed for Linux desktop systems
 
 License:        BSD
 URL:            https://github.com/Igalia/%{name}
-Source0:        https://github.com/Igalia/%{name}/archive/%{version}/%{name}-%{version}.tar.xz
+Source0:        https://github.com/Igalia/WPEBackend-fdo/archive/%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:  cmake
 BuildRequires:  gcc-c++

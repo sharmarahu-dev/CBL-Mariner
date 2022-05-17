@@ -10151,8 +10151,8 @@
         "type": "other",
         "other": {
           "name": "libwpe",
-          "version": "1.6.0",
-          "downloadUrl": "https://github.com/WebPlatformForEmbedded/libwpe/releases/download/1.6.0/libwpe-1.6.0.tar.xz"
+          "version": "1.12.0",
+          "downloadUrl": "https://github.com/WebPlatformForEmbedded/libwpe/releases/download/1.12.0/libwpe-1.12.0.tar.xz"
         }
       }
     },
@@ -26236,6 +26236,16 @@
       "component": {
         "type": "other",
         "other": {
+          "name": "webkit2gtk3",
+          "version": "2.36.1",
+          "downloadUrl": "https://webkitgtk.org/releases/webkitgtk-2.36.1.tar.xz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
           "name": "webrtc-audio-processing",
           "version": "0.3.1",
           "downloadUrl": "http://freedesktop.org/software/pulseaudio/webrtc-audio-processing/webrtc-audio-processing-0.3.1.tar.xz"
@@ -26337,8 +26347,8 @@
         "type": "other",
         "other": {
           "name": "wpebackend-fdo",
-          "version": "1.6.0",
-          "downloadUrl": "https://github.com/Igalia/wpebackend-fdo/archive/1.6.0/wpebackend-fdo-1.6.0.tar.xz"
+          "version": "1.12.0",
+          "downloadUrl": "https://github.com/Igalia/wpebackend-fdo/archive/1.12.0/wpebackend-fdo-1.12.0.tar.xz"
         }
       }
     },
